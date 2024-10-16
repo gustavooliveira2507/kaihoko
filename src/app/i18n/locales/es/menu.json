@@ -1,0 +1,64 @@
+{
+    "home": "Inicio",
+    "myqueue": "Mi Cola",
+    "service":{
+        "index":"Servicios",
+        "request":"Solicitud",
+        "problem":"Problema",
+        "activity":"Actividad",
+        "schedule":"Programación"
+    },
+    "workflow":{
+        "index":"Flujo de trabajo",
+        "request":"Solicitud",
+        "problem":"Problema",
+        "activity":"Actividad",
+        "schedule":"Programación"
+    },
+    "report":{
+        "index":"Reportes",
+        "request":"Solicitud",
+        "servicelevel":"Nivel de servicio",
+        "invetory":"Inventario",
+        "audit":"Auditoría"
+    },
+    "configuration":{
+        "index":"Configuración",
+        "client":{
+            "index":"Cliente",
+            "having":"Activo",
+            "license":"Licencia",
+            "contract":"Contrato",
+            "sectional":"Local",
+            "sla":"SLA"
+        },
+        "calendar":{
+            "index":"Calendario",
+            "holiday":"Feriado"
+        },
+        "accessmanager":{
+            "index":"Gestor de acceso",
+            "user":"Usuario",
+            "group":"Grupo",
+            "role":"Perfil",
+            "permission":"Permiso"
+        },
+        "general":{
+            "index":"General",
+            "havingstype":"Tipo de Activo",
+            "requeststype":"Tipo de Solicitud",
+            "requestsstatus":"Estado Solicitud",
+            "priority":"Prioridad",
+            "urgency":"Urgencia",
+            "channel":"Canal",
+            "class":"Clase",
+            "category":"Categoría"
+        }
+    },
+    "user":{
+        "index":"Usuario",
+        "profile":"Perfil",
+        "changePassword":"Cambiar Contraseña",
+        "logout":"Salir"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "title": "Hi there!",
+    "dashboard":{
+        "myTask":"My tasks",
+        "queueRequest":"Queue Request",
+        "serviceLevel":"Service Level"
+    }
+}

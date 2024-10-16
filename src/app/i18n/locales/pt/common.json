@@ -1,0 +1,19 @@
+{
+    "title": "Olá",
+    "dashboard":{
+        "myTask":"Minhas tarefas",
+        "queueRequest":"Fila de solicitações",
+        "serviceLevel":"Nível de serviço",
+        "requestByType":{
+            "title":"Solicitações por tipo",
+            "incident":"Incidente",
+            "serviceRequest":"Solicitação de serviço",
+            "change":"Mudança",
+            "problem":"Problema",
+            "project":"Projeto",
+            "planingTask":"Tarefa planejada"
+        }
+
+    }
+}
+    

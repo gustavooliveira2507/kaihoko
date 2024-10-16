@@ -1,5 +1,5 @@
 {
-  "name": "service-client",
+  "name": "kaihoko",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "accept-language": "^3.0.20",
+    "chart.js": "^4.4.4",
+    "faker": "^5.5.3",
+    "i18next": "^23.15.1",
+    "i18next-resources-to-backend": "^1.2.1",
+    "next": "14.2.13",
     "react": "^18",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
-    "next": "14.2.13"
+    "react-i18next": "^15.0.2"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/faker": "^5.5.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.13"
+    "eslint-config-next": "14.2.13",
+    "sass": "^1.79.2",
+    "typescript": "^5"
   }
 }

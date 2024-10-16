@@ -1,0 +1,8 @@
+{
+    "title": "Holá",
+    "dashboard":{
+        "myTask":"Mi tareas",
+        "queueRequest":"Cola de solicitudes",
+        "serviceLevel":"Nivel de servicio"
+    }
+}
