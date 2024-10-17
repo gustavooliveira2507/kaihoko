@@ -46,7 +46,8 @@ export function PieChart({title, data }: IProps) {
       },
       title: {
         display: true,
-        text: title
+        text: title,
+        position:"bottom" as const,
       },
     },
   };

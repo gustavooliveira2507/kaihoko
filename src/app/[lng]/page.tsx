@@ -31,69 +31,7 @@ async function getDashBoardCards(): Promise<{data: ICards[]}> {
 
 export default  async  function Home({ params }: { params: Params }) {
   const { t } = await useTranslation(params.lng, 'common')
-/*
-  const optionsRequestType = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'top' as const,
-      },
-      title: {
-        display: true,
-        text: t('dashboard.requestByType.title')
-      },
-    },
-  };
-  const labels = [t('dashboard.requestByType.incident'), t('dashboard.requestByType.serviceRequest'),t('dashboard.requestByType.project'),t('dashboard.requestByType.planingTask')];
- 
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: 'Dataset 1',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'Dataset 2',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
-    ],
-  };
 
-
-<div className={styles.cell}>
-              <div className={styles.pieChart}>
-                 <PieChart data={dataPie} options={options}/>  
-              </div>
-          </div>
-          <div className={styles.cell}>
-              <div className={styles.pieChart}>
-                  <PieChart data={dataPie} options={options}/>  
-              </div>
-          </div>
-        </div>
-        <div className={styles.row}>
-          <div className={styles.cell}>
-              <div className={styles.LineChart}>
-                <LineChart data={data} options={options} />
-              </div>
-            </div>
-            <div className={styles.cell}>
-              <div className={styles.LineChart}>
-                <LineChart data={data} options={options} />
-              </div>
-            </div>
-            <div className={styles.cell}>
-              <div className={styles.LineChart}>
-                <LineChart data={data} options={options} />
-              </div>
-            </div>
-
-   */
   
   const res = await getRequestTypeData();
   const dashData = new Array<IDashboardData>();
@@ -142,8 +80,14 @@ export default  async  function Home({ params }: { params: Params }) {
             <div className={styles.pieChart}>
                 <PieChart data={dashData} title={t('dashboard.requestByType.title')}   />  
             </div>
-          </div>          
+          </div>    
+          <div className={styles.cell}>
+            <div className={styles.pieChart}>
+                <PieChart data={dashData} title={t('dashboard.requestByType.title')}   />  
+            </div>
+          </div>       
         </div>
+        
       </main>      
     </div>
   );
