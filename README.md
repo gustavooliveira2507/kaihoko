@@ -1,33 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Application with SCSS and i18n
+
+This is a template for a Next.js application that utilizes SCSS for styling and i18n for translation support. It provides a starting point for building multi-language applications in English, Portuguese, and Spanish.
 
 ## Getting Started
 
-First, run the development server:
+To get started with this template, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository to your local machine.
+2. Install the dependencies by running `npm install` or `yarn install`.
+3. Start the development server with `npm run dev` or `yarn dev`.
 
 Open [https://localhost:3000/pt](https://localhost:3000/pt) with your browser to see the result.
 
+## Folder Structure
 
-## Learn More
+The folder structure of this template is as follows:
 
-To learn more about Next.js, take a look at the following resources:
+```
+├── public
+│   ├── images
+│   └── ...
+├── src
+│   ├── components
+│   ├── pages
+│   ├── styles
+│   ├── locales
+│   └── ...
+└── ...
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- The `public` folder contains static assets such as images.
+- The `src` folder contains the main source code of the application.
+    - The `components` folder contains reusable React components.
+    - The `pages` folder contains the Next.js pages.
+    - The `styles` folder contains SCSS files for styling.
+    - The `locales` folder contains translation files for different languages.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Localization (i18n)
 
-## Deploy on Vercel
+This template uses the i18n library to handle localization. The translation files for each language are stored in the `locales` folder. To add a new language, create a new JSON file in the `locales` folder with the translations for that language.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To use translations in your components or pages, import the `useTranslation` hook from the `next-translate` package and use it to access the translated strings.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```jsx
+import { useTranslation } from 'next-translate';
+
+const MyComponent = () => {
+    const { t } = useTranslation();
+
+    return (
+        <div>
+            <h1>{t('common:hello')}</h1>
+            <p>{t('common:description')}</p>
+        </div>
+    );
+};
+```
+
+## Styling with SCSS
+
+This template supports styling with SCSS. The SCSS files are located in the `styles` folder. To use SCSS styles in your components or pages, import the SCSS file and apply the styles to your elements.
+
+```jsx
+import styles from '../styles/MyComponent.module.scss';
+
+const MyComponent = () => {
+    return (
+        <div className={styles.container}>
+            <h1 className={styles.title}>Hello, world!</h1>
+            <p className={styles.description}>This is a styled component.</p>
+        </div>
+    );
+};
+```
+
+## Conclusion
+
+This template provides a solid foundation for building Next.js applications with SCSS and i18n support. Feel free to customize it according to your needs and start building amazing multi-language applications!
