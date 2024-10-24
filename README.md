@@ -1,6 +1,6 @@
-# Next.js Application with SCSS and i18n
+# Kaihoko (Next.js Application with SCSS and i18n)
 
-This is a template for a Next.js application that utilizes SCSS for styling and i18n for translation support. It provides a starting point for building multi-language applications in English, Portuguese, and Spanish.
+This is a template for a Next.js (14.2.13) application that utilizes SCSS for styling and i18n for translation support. It provides a starting point for building multi-language applications in English, Portuguese, and Spanish.
 
 ## Getting Started
 
